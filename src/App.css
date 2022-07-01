@@ -1,38 +1,141 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  padding:10px ;
+}
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBar-logo{
+  width: 50px;
+  cursor: pointer;
+
+  
+}
+.navBar-brandText{
+  font-size: 18px;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+/* body */
+.aside{
+  display: flex;
+}
+
+.menu{
+  width: 200px;
+  height: 100vh;
+  border-top: 1px solid rgb(206, 194, 194);
+  border-right: 1px solid rgb(206, 194, 194);
+}
+
+.menu p{
+  margin: 0;
+  padding: 10px 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.addUser-button{
+ padding: 20px 30px;
+}
+
+.modalButton{
+  background-color: rgb(25, 171, 25);
+  color: aliceblue;
+  border-radius: 8px;
+  padding: 5px 14px;
+  border: none;
+}
+table{
+  margin-left: 30px;
+}
+thead{
+  background-color: rgb(208, 203, 196) !important;
+}
+th,td{
+  border: 1px solid rgb(201, 194, 194);
+  padding: 15px 20px !important
+}
+.thead-name{
+  width: 200px !important;
+}
+.thead-role{
+  width: 150px !important;
+}
+.thead-lastseen{
+  width: 200px !important;
+}
+.thead-delete{
+  width: 50px !important;
+}
+.navBar-logo-id{
+  border-radius: 200px;
+}
+.deleteicon{
+  background-color: green !important;
+  color: white;
+  font-size: 24px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* //modal */
+
+.modalholder{
+  display: flex;
+}
+
+.modalleft{
+  flex: 0.36;
+background-color: pink;
+}
+.modalleft{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.addusericon{
+  font-size: 100px;
   color: white;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.modalleft-text{
+  text-align:left;
+  color: white;
+  font-size: 13px;
+  padding: 4px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modalright{
+  flex: 0.64;
+  padding: 15px;
+}
+.emailinput{
+  width: 100%;
+}
+.dropdownner{
+  width: 200px;
+  padding: 6px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.button-container{
+  display: flex;
+  gap: 10px;
+}
+.buttonclose{
+background-color: rgb(208, 148, 35) !important;
+width: 100px;
+padding: 2px;
+border: none;
+color: white;
+}
+.buttonsubmit{
+background-color: rgb(15, 189, 15);
+width: 100px;
+border: none;
+padding: 2px;
+color: white;
 }
